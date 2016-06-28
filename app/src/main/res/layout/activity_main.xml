@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.epicodus.bogglesolitaire.MainActivity">
+    tools:context="com.epicodus.bogglesolitaire.MainActivity"
+    android:background="#fc2e6170">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,8 +16,37 @@
         android:text="Boggle Solitaire"
         android:id="@+id/gameTitle"
         android:textSize="40sp"
+        android:layout_marginTop="117dp"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:id="@+id/playButton"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="29dp" />
+        android:background="#4b7fbf"
+        android:textColor="#4d1754" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_marginBottom="102dp"
+        android:textSize="20sp"
+        android:layout_above="@+id/playButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your name"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/username"
+        android:layout_alignRight="@+id/playButton"
+        android:layout_alignEnd="@+id/playButton"
+        android:layout_marginTop="56dp" />
 
 </RelativeLayout>
